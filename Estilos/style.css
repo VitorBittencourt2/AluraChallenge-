@@ -1,0 +1,459 @@
+body {
+    background: #051D3B;
+    font-family: 'Inter', sans-serif;
+    
+    width: 1376px;
+    height: 104px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position:relative;
+    width: 1376px;
+    height: 56px;
+    left: 32px;
+    top: 32px;
+}
+
+#logo {
+    position: relative;
+    width: 145px;
+    height: 34.05px;
+    padding-right: 1px;
+}
+
+#caixaDePesquisas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+
+    position: relative;
+    width: 796px;
+    height: 56px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+}
+
+input::placeholder {
+    position: static;
+    width: 300px;
+    height: 24px;
+    margin-left: calc(50% - 123px/2 - 300.5px);
+    margin-top: calc(50% - 24px/2);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+    opacity: 0.64;
+}
+
+#perfilETitulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+
+    position: absolute;
+    margin-left: 127%;
+    padding: 32px;
+    margin-top: 5px;
+}
+
+#FotoDePerfil {
+    display: flex;
+    position: static;
+    width: 65px;
+
+    left: 11.32%;
+    right: 58.49%;
+    top: 21.43%;
+    bottom: 21.43%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+#perfilETitulo h4 {
+    position: absolute;
+  
+    left: 80%;
+    top: 21.57%;
+    bottom: 21.43%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#menu {
+    position: absolute;
+    width: 189px;
+    height: 146px;
+    left: 110px;
+    top: 28px;
+}
+
+#tituloMenu {
+    position: absolute;
+    width: 51px;
+    height: 18px;
+    left: 32px;
+    top: 128px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#lista {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    list-style: none;
+}
+
+#menuEditor {
+    position: absolute;
+    width: 300px;
+    height: 48px;
+    left: 32px;
+    top: 172px;
+}
+
+#menuComunidade {
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    left: 32px;
+    top: 236px;
+}
+
+#menuEditor a {
+    position: absolute;
+    left: 16.86%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+    padding-left: 2px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#menuComunidade a {
+    position: absolute;
+    left: 40%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+    opacity: 0.56;
+    text-decoration: none;
+}
+
+#tituloProjeto {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    width: 200px;
+    height: 18px;
+    left: 1336px;
+    top: 138px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 10px;
+    font-size: 12px;
+    line-height: 34px;
+
+    letter-spacing: 0.8em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#nomeDoProjeto {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: 1336px;
+    top: 186px;
+    border: none;
+    padding-left: 15px;
+
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+
+}
+
+#descricaoDoProjeto {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-top: 1px;
+
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    left: 1336px;
+    top: 249px;
+
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+}
+
+#tituloPersonalizacao {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: 1336px;
+    top: 354px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    letter-spacing: 0.8em;
+    text-transform: uppercase;
+}
+
+select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+
+    position: absolute;
+    width: 360px;
+    height: 56px;
+    left: 1336px;
+    top: 390px;
+
+    background: rgba(255, 255, 255, 0.16);
+    color: #FFFFFF;
+    opacity: 0.64;
+
+    border-radius: 8px;
+    border: none;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+select option {
+    background: #051D3B;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border: none;
+}
+
+#colorPicker {
+    position: absolute;
+    width: 360px;
+    height: 56px;
+    left: 1336px;
+    top: 458px;
+
+    background: rgba(196, 196, 196, 0.01);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#btnSalvarProjeto {
+    position: absolute;
+    width: 350px;
+    height: 56px;
+    left: 1336px;
+    top: 548px;
+
+    text-align: center;
+    color: #051830;
+    background: #5081FB;
+    border-radius: 8px;
+    border: none;
+
+    font-family: Inter;
+    font-style: normal;
+    
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#caixaMudaDeCor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+
+    position: absolute;
+    width: 752px;
+    height: 366px;
+    left: 484px;
+    top: 165px;
+
+    background: #6BD1FF;
+    border-radius: 8px;
+}
+
+#CaixaCorPreta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+
+    position: static;
+    width: 720px;
+    height: 302px;
+    left: 32px;
+    top: 32px;
+
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+#campoTextarea {
+    position: static;
+    width: 720px;
+    height: 285px;
+    left: 16px;
+    top: 82px;
+
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    background: #141414;
+
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    border: none;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+#caixaDasBolinhas {
+    position: absolute;
+    width: 52px;
+    height: 12px;
+    left: 40px;
+    top: 40px;
+}
+
+#bolinhaVermelha {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 16px;
+    top: 16px;
+
+    background: #FF5F56;
+    border-radius: 5px;
+    border: none;
+}
+
+#bolinhaAmarela {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 36px;
+    top: 16px;
+
+    background: #FFBD2E;
+    border-radius: 5px;
+    border: none;
+}
+
+#bolinhaVerde {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 56px;
+    top: 16px;
+
+    background: #27C93F;
+    border-radius: 5px;
+    border: none;
+}
+
+#btnHighlight {
+    position: absolute;
+    width: 820px;
+    height: 56px;
+    right:2px;
+    top: 455px;
+
+    background: rgba(80, 129, 251, 0.08);
+    border-radius: 8px;
+    border: none;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
