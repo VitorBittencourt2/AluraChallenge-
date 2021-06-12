@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-  
-    <link rel="stylesheet" href="reset.css">
+
+
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Estilos/responsivo.css">
+    <link rel="stylesheet" href="../Estilos/dracula.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <title>Alura Dev</title>
 </head>
 
-<body>
+<body spellcheck="false">
     <header>
         <img src="../Imagens/logo.png" alt="Logo do Alura Dev" id="logo">
         <form>
@@ -26,12 +28,12 @@
     <aside id="menu">
         <h3 id="tituloMenu"> Menu</h3>
         <ul id="lista">
-            <li id="menuEditor"><img src="../Imagens/iconeEditor.png" alt="Icone Editor">
+            <li id="menuEditor"><img src="../Imagens/iconeEditor.png" alt="Icone Editor" class="icon">
                 <a href="index.html">Editor de código</a>
             </li>
             <li id="menuComunidade">
-                <img src="../Imagens/IconeComunidade.png" alt="Icone Comunidade">
-                <a href="#">Comunidade</a>
+                <img src="../Imagens/IconeComunidade.png" alt="Icone Comunidade" class="icon">
+                <a href="comunidade.html">Comunidade</a>
             </li>
         </ul>
     </aside>
@@ -43,28 +45,35 @@
                     <div id="bolinhaAmarela"></div>
                     <div id="bolinhaVerde"></div>
                 </div>
-                <textarea id="campoTextarea"></textarea>
-                <input type="submit" value="Visualizar com o Highlight" id="btnHighlight">
+                <div class="codigo-wrapper">
+                    <code id="campoTextarea" class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                </div>
             </div>
+            <button type="button" id="btnHighlight">Visualizar com o Highlight </button>
         </div>
     </form>
+
     <aside id="menuDireito">
-        <form>
+        <form id="formPrincipal">
             <h4 id="tituloProjeto">Seu Projeto </h4>
 
-            <input type="text" id="nomeDoProjeto" placeholder="Nome do seu projeto">
-            <input type="text" id="descricaoDoProjeto" placeholder="Descrição do seu projeto">
+            <input type="text" id="nomeDoProjeto" class="tituloDoProjeto" placeholder="Nome do seu projeto">
+            <input type="text" id="descricaoDoProjeto" class="descricaoProjeto" placeholder="Descrição do seu projeto">
 
             <h4 id="tituloPersonalizacao"> Personalização </h4>
-            <select>
-                <option value="javaScript">JavaScript</option>
+            <label for="linguagem" class="label"></label>
+            <select name="linguagem" id="linguagem" class="linguagem">
+                <option value="javascript">JavaScript</option>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
             </select>
-            <input type="color" id="colorPicker">
-            <input type="submit" value="Salvar Projeto" id="btnSalvarProjeto">
+            <input type="color" id="colorPicker" value="#4169E1">
+            <input type="button" value="Salvar Projeto" id="btnSalvarProjeto" class="botaoSalvar">
         </form>
     </aside>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
